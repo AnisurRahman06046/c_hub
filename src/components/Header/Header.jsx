@@ -10,6 +10,9 @@ function Header() {
         <Link to="/jobs">Jobs</Link>
       </li>
       <li>
+        <Link to="/applied">Applied Jobs</Link>
+      </li>
+      <li>
         <Link to="/statistics">Statistics</Link>
       </li>
     </>

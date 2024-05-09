@@ -7,11 +7,14 @@ import Root from "./components/Root/Root";
 import Home from "./components/Home/Home";
 import Statistics from "./components/Statistics/Statistics";
 import Jobs from "./components/Jobs/Jobs";
+import AppliedJobs from "./components/AppliedJobs/AppliedJobs";
+import ErrorPage from "./components/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
@@ -24,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/jobs",
         element: <Jobs />,
+      },
+      {
+        path: "/applied",
+        element: <AppliedJobs />,
       },
     ],
   },
